@@ -18,7 +18,7 @@ allPostRouter.use(cors());
 
 // Get all posts
 
-allPostRouter.get('/all', async (req, res) => {
+allPostRouter.get('/', async (req, res) => {
     try {
         const posts = await PostModel.find()
         console.log('posts',posts)
@@ -31,7 +31,7 @@ allPostRouter.get('/all', async (req, res) => {
 
 // patch
 
-allPostRouter.patch("/all/update/:id", async (req, res) => {
+allPostRouter.patch("/update/:id", async (req, res) => {
     const payload = req.body
     const id = req.params.id
     console.log(id)

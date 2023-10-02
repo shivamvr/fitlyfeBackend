@@ -20,7 +20,7 @@ app.get('/',(req,res)=>{
 app.use('/users',userRouter)
 app.use('/posts',postRouter)
 app.use('/contact',contactRouter)
-app.use('/posts',allPostRouter)
+app.use('/allposts',allPostRouter)
 
 
 app.listen(8080, async()=>{
