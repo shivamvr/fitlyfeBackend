@@ -4,7 +4,6 @@
 
 const express = require('express')
 const { PostModel } = require('../model/post.model')
-const { auth } = require('../middleware/auth.middleware')
 const cors = require('cors')
 const allPostRouter = express.Router()
 allPostRouter.use(cors());
@@ -12,7 +11,6 @@ allPostRouter.use(cors());
 
 // post post
 
-allPostRouter.use(auth)
 
 
 
