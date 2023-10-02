@@ -7,12 +7,12 @@ const { PostModel } = require('../model/post.model')
 const { auth } = require('../middleware/auth.middleware')
 const cors = require('cors')
 const allPostRouter = express.Router()
-postRouter.use(cors());
+allPostRouter.use(cors());
 
 
 // post post
 
-postRouter.use(auth)
+allPostRouter.use(auth)
 
 
 
